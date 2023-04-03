@@ -30,4 +30,9 @@ export class CoffeesService {
     }
     return coffee;
   }
+
+  create(createCoffeeDto: any) {
+    this.coffees.push(createCoffeeDto);
+    return createCoffeeDto;
+  }
 }
